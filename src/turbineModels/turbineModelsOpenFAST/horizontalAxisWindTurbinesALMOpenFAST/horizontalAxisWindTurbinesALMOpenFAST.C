@@ -411,7 +411,7 @@ void horizontalAxisWindTurbinesALMOpenFAST::sendInput()
   fi.comm = MPI_COMM_WORLD;
   fi.nTurbinesGlob = numTurbines;
   fi.dryRun = dryRun ;
-  fi.debug = true;
+  fi.debug = false;
   fi.tStart = tStart - timeSimulationStart;
   // True restart capability is not an option
   if (fi.tStart > 0) {
